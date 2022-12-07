@@ -1,0 +1,51 @@
+h1 {
+    font-family: "Epilogue";
+    font-weight: 800;
+    font-size: 8em;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.topnav {
+    border: 8px solid black;
+    height: 64px;
+    padding: 8px 4px 0px;
+}
+
+.topnav a,
+span {
+    font-family: "Epilogue";
+    font-weight: 400;
+    font-size: 2em;
+    float: right;
+}
+
+.topnav a:hover,
+h1:hover {
+    color: red;
+}
+
+.linksnav {
+    height: 32px;
+    padding: 8px 4px 8px;
+    float: right;
+    position: fixed;
+    bottom: 0;
+}
+
+.linksnav a,
+span {
+    font-family: "Epilogue";
+    font-weight: 400;
+    font-size: 1.5em;
+    float: right;
+}
+
+.linksnav i {
+    align-self: baseline;
+}
+
+.linksnav a:hover {
+    color: red
+}
