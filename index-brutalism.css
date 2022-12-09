@@ -1,3 +1,12 @@
+:root {
+    --hover-color: #FF5349;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 h1 {
     font-family: "Epilogue";
     font-weight: 800;
@@ -7,45 +16,86 @@ h1 {
     display: inline-block;
 }
 
+h2 {
+    font-family: "Epilogue";
+    font-weight: 100;
+    font-size: 8em;
+    padding: 0px 24px 0px;
+    margin: 8px;
+    display: inline-block;
+}
+
+
 .topnav {
-    border: 8px solid black;
+    border: 10px solid black;
     height: 64px;
     padding: 8px 4px 0px;
+    margin-bottom: 80px;
 }
 
-.topnav a,
-span {
-    font-family: "Epilogue";
-    font-weight: 400;
-    font-size: 2em;
-    float: right;
-}
-
-.topnav a:hover,
-h1:hover {
-    color: red;
+a:hover,
+h1:hover,
+h2:hover {
+    color: var(--hover-color);
+    cursor: pointer;
 }
 
 .linksnav {
     height: 32px;
-    padding: 8px 4px 8px;
-    float: right;
-    position: fixed;
-    bottom: 0;
+    padding: 8px 4px 0px;
+    margin-top: 16px;
 }
 
 .linksnav a,
-span {
+.linksnav span {
     font-family: "Epilogue";
     font-weight: 400;
     font-size: 1.5em;
-    float: right;
 }
 
 .linksnav i {
     align-self: baseline;
 }
 
-.linksnav a:hover {
-    color: red
+@supports (-webkit-text-stroke: 1px black) {
+    .projects {
+        font-weight: 400 !important;
+        -webkit-text-stroke: 1px black;
+        -webkit-text-fill-color: white;
+    }
+}
+
+@supports (-webkit-text-stroke: 1px var(--hover-color)) {
+    .projects:hover {
+        -webkit-text-fill-color: var(--hover-color);
+        -webkit-text-stroke: 1px var(--hover-color);
+        cursor: pointer;
+    }
+}
+
+.w3-hide {
+    display: none !important
+}
+
+.w3-show {
+    flex: 1;
+    font-family: "Epilogue";
+    font-weight: 100;
+    font-size: 1.5em;
+    color: #FF5349;
+    ;
+}
+
+.content-resume {
+    display: flex;
+    align-items: center;
+}
+
+.content-resume span {
+    padding-right: 16px;
+}
+
+.content-aboutme {
+    display: flex;
+    align-items: center;
 }
