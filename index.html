@@ -3,6 +3,10 @@
 <title>paul kluitenberg</title>
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+    <link rel="manifest" href="public/manifest.json">
     <link rel='stylesheet' href='styles/index.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Epilogue:100,400,800'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'
@@ -18,9 +22,12 @@
             </a>
         </h1>
     </header>
+    <div class="mouse-tail">
+        <img src="images/mouse-tail-image.jpg">
+    </div>
     <hr>
-    <div style="display:flex">
-        <h2 onclick='openContainer("content-aboutme")'>ABOUT ME&nbsp;>&nbsp;>&nbsp;></h2>
+    <div class='row'>
+        <h2 onclick='openContainer("content-aboutme")'>about me&nbsp;>&nbsp;>&nbsp;></h2>
         <div id='content-aboutme' class='content-aboutme hide'>
             <p>
                 hi. my name is <b>paul kluitenberg</b>.
@@ -31,72 +38,88 @@
         </div>
     </div>
     <hr>
-    <div style="display:flex;">
-        <h2 onclick='openContainer("content-resume")'>RESUME >>></h2>
+    <div class='row'>
+        <h2 onclick='openContainer("content-resume")'>resume >>></h2>
         <div id='content-resume' class='content-resume hide'>
-            <span><a><b class="alternate-hover">calvin college</b></a><br>2013-2017<br>b.a.
-                mathematics</span>
-            <span>></span>
-            <span>
-                <a><b class="alternate-hover">cna financial</b></a>
-                <br>2017-2020<br>data analyst/<br>data engineer
+            <span class='content-item'>
+                <b>calvin college</b>
+                <ul>
+                    <li>2013-2017</li>
+                    <li>b.a. mathematics</li>
+                </ul>
             </span>
             <span>></span>
-            <span>
-                <a><b class="alternate-hover">spins llc</b></a>
-                <br>2020-2022<br>data engineer/<br>sr. data engineer
+            <span class='content-item'>
+                <b>cna financial</b>
+                <ul>
+                    <li>2017-2020</li>
+                    <li>data analyst</li>
+                    <li>data engineer</li>
+                </ul>
             </span>
             <span>></span>
-            <span>
-                <a><b class="alternate-hover">career break</b></a>
+            <span class='content-item'>
+                <b>spins llc</b>
+                <ul>
+                    <li>2020-2022</li>
+                    <li>data engineer</li>
+                    <li>full stack dev</li>
+                </ul>
+            </span>
+            <span>></span>
+            <span class='content-item'>
+                <b>career break</b>
                 <br>traveling
             </span>
         </div>
     </div>
     <hr>
-    <div style="display:flex">
-        <h2 onclick='openContainer("content-projects")' class='projects'>PROJECTS >>></h2>
-        <div id='content-projects' class='content-projects hide'>
-            <span>
-                <span><a target='_blank' href="https://github.com/pkluitenberg/pk-runs"><b class="alternate-hover">run
-                            mapping</b></a></span>
+    <div class='row'>
+        <h2 onclick='openContainer("content-projects")' class='projects'>projects >>></h2>
+        <span id='content-projects' class='content-projects hide'>
+            <span class='content-item'>
+                <a target='_blank' href="https://github.com/pkluitenberg/pk-runs">
+                    <b class="alternate-hover">run mapping</b>
+                </a>
                 <ul>
-                    <li>-reactjs</li>
-                    <li>-nodejs</li>
+                    <li>reactjs</li>
+                    <li>nodejs</li>
                 </ul>
             </span>
-            <span>
-                <span><a target='_blank' href="https://github.com/pkluitenberg/pk-runs-api"><b
-                            class="alternate-hover">running data api</b></a></span>
+            <span class='content-item'>
+                <a target='_blank' href="https://github.com/pkluitenberg/pk-runs-api">
+                    <b class="alternate-hover">run data api</b>
+                </a>
                 <ul>
-                    <li>-python</li>
-                    <li>-fastapi</li>
+                    <li>python</li>
+                    <li>fastapi</li>
                 </ul>
             </span>
-            <span>
-                <span><a target='_blank' href="https://github.com/pkluitenberg/pace-converter"><b
-                            class="alternate-hover">pace converter</b></a></span>
+            <span class='content-item'>
+                <a target='_blank' href="https://github.com/pkluitenberg/pace-converter">
+                    <b class="alternate-hover">pace converter</b>
+                </a>
                 <ul>
-                    <li>-reactjs</li>
-                    <li>-nodejs</li>
+                    <li>reactjs</li>
+                    <li>nodejs</li>
                 </ul>
             </span>
-            <span>
+            <span class='content-item'>
                 <span><b>other</b>
                     <ul>
                         <a target='_blank' href="">
-                            <li class="alternate-hover">-ethereum price</li>
+                            <li class="alternate-hover">ethereum price</li>
                         </a>
                         <a target='_blank' href="https://github.com/pkluitenberg/Random_Image_App">
-                            <li class="alternate-hover">-random image generator</li>
+                            <li class="alternate-hover">random image generator</li>
                         </a>
                     </ul>
                 </span>
-        </div>
+            </span>
     </div>
     <hr>
-    <div style="display:flex;">
-        <h2 onclick='openContainer("content-photographs")'>PHOTOGRAPHS >>></h2>
+    <div class='row'>
+        <h2 onclick='openContainer("content-photographs")'>photographs >>></h2>
         <div id='content-photographs' class='content-photographs hide'>
             tbd
         </div>
@@ -114,9 +137,8 @@
         <span>&nbsp;|&nbsp;</span>
         <a target='_blank' href='mailto:paul.kluitenberg@gmail.com'>email&nbsp;<i
                 class='fa-solid fa-arrow-up-right-from-square fa-sm'></i></a>
-    </div>
-    <div class="mouse-tail">
-        <img src="images/mouse-tail-image.jpg">
+        <span>&nbsp;|&nbsp;</span>
+        <span class="copyright">&copy; Paul Kluitenberg</span>
     </div>
     <script src="scripts/openContainer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
