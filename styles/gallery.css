@@ -143,18 +143,16 @@ h1:hover {
   max-height: 80%;
 }
 
-.preview-img .landscape {
+.landscape {
   height: 350px;
-  width: 375px;
-  background: #f1f1fa;
-  display: block;
+  width: 622px;
+  background: var(--background-color);
 }
 
-.preview-img .portrait {
+.portrait {
   width: 375px;
   height: 350px;
-  background: #f1f1fa;
-  display: block;
+  background: var(--background-color);
 }
 
 .full-image-desc {
