@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>gallery</title>
+    <meta name="viewport" conten="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="public/manifest.json" />
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Epilogue:100,400,800"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body id="body">
+    <header>
+      <h1 class="header-text">paul kluitenberg</h1>
+    </header>
+    <div class="mouse-tail">
+      <img src="images/mouse-tail-image.jpg" />
+    </div>
+
+    <div onclick="closeOverlay()" id="overlay" class="overlay">
+      <div onclick="closeOverlay()" class="close-button">X</div>
+      <div class="container-full-image">
+        <img id="fullImage" class="full-image" loading="lazy" src="" />
+        <div id="fullImageDesc" class="full-image-desc">
+          <h3 id="location"></h3>
+          <p id="timestamp"></p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="grid-container">
+      <div class="grid-element welcome">
+        <h2>welcome</h2>
+        <p>
+          i've spent the last couple years traveling and have taken my fair
+          share of photos
+        </p>
+        <p>these are some of my favorites</p>
+        <p>all photos have been taken with my google pixel 4a 5g</p>
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img landscape"
+          onclick="openOverlay(
+            '/images/gallery/fulls/01_oregon_sahaliefalls.jpg',
+            'Sahalie Falls, Oregon, United States of America',
+            '15:03 July 17, 2021'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/01_oregon_sahaliefalls.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img landscape"
+          onclick="openOverlay(
+            '/images/gallery/fulls/02_washington_colchucklake.jpg',
+            'Colchuck Lake, Washington, United States of America',
+            '19:08 September 25, 2021'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/02_washington_colchucklake.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img landscape"
+          onclick="openOverlay(
+            '/images/gallery/fulls/03_arizona_grandcanyon.jpg',
+            'Grand Canyon, Arizona, United States of America',
+            '08:55 October 23, 2021'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/03_arizona_grandcanyon.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img portrait"
+          onclick="openOverlay(
+            '/images/gallery/fulls/12_california_prairiecreekredwoodsstatepark.jpg',
+            'Prairie Creek Redwoods State Park, California, United States of America',
+            '15:32 September 28, 2021'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/12_california_prairiecreekredwoodsstatepark.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img landscape"
+          onclick="openOverlay(
+            '/images/gallery/fulls/04_nevada_spencerhotsprings.jpg',
+            'Spencer Hot Springs, Nevada, United States of America',
+            '06:32 October 26, 2021'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/04_nevada_spencerhotsprings.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img landscape"
+          onclick="openOverlay(
+            '/images/gallery/fulls/05_oregon_horsebutte.jpg',
+            'Horse Butte, Oregon, United States of America',
+            '16:35 December 1, 2021'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/05_oregon_horsebutte.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img landscape"
+          onclick="openOverlay(
+            '/images/gallery/fulls/06_indonesia_nusapenida.jpg',
+            'Nusa Penida, Indonesia',
+            '17:31 April 9, 2022'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/06_indonesia_nusapenida.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img portrait"
+          onclick="openOverlay(
+            '/images/gallery/fulls/13_oregon_smithrockstatepark.jpg',
+            'Smith Rock State Park, Oregon, United States of America',
+            '19:18 August 21, 2021'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/13_oregon_smithrockstatepark.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img portrait"
+          onclick="openOverlay(
+            '/images/gallery/fulls/14_california_goldengaterecreationarea.jpg',
+            'Golden Gate Recreation Area, California, United States of America',
+            '19:46 September 29, 2021'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/14_california_goldengaterecreationarea.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img landscape"
+          onclick="openOverlay(
+            '/images/gallery/fulls/07_australia_sydneyharbour.jpg',
+            'Sydney Harbour, Sydney, Australia',
+            '16:20 May 19, 2022'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/07_australia_sydneyharbour.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img landscape"
+          onclick="openOverlay(
+            '/images/gallery/fulls/08_newzealand_mounteden.jpg',
+            'Mount Eden, Auckland, New Zealand',
+            '16:24 May 26, 2022'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/08_newzealand_mounteden.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img landscape"
+          onclick="openOverlay(
+            '/images/gallery/fulls/09_newzealand_benlomondtrack.jpg',
+            'Bend Lomond Track, Queenstown, New Zealand',
+            '10:16 May 29, 2022'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/09_newzealand_benlomondtrack.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img portrait"
+          onclick="openOverlay(
+            '/images/gallery/fulls/15_california_sanfranciscobay.jpg',
+            'San Francisco Bay, California, United States of America',
+            '19:21 February 07, 2022'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/15_california_sanfranciscobay.jpg"
+        />
+      </div>
+      <div class="grid-element">
+        <img
+          class="preview-img landscape"
+          onclick="openOverlay(
+            '/images/gallery/fulls/10_southkorea_busancinemacenter.jpg',
+            'Busan Cinema Center, Busan, South Korea',
+            '19:27 July 2, 2022'
+          )"
+          loading="lazy"
+          src="/images/gallery/previews/10_southkorea_busancinemacenter.jpg"
+        />
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="linksnav">
+      <a target="_blank" href="https://linkedin.com/in/paulkluitenberg/"
+        >linkedin&nbsp;<i
+          class="fa-solid fa-arrow-up-right-from-square fa-sm"
+        ></i
+      ></a>
+      <span>&nbsp;|&nbsp;</span>
+      <a target="_blank" href="https://instagram.com/d_townpaul"
+        >instagram&nbsp;<i
+          class="fa-solid fa-arrow-up-right-from-square fa-sm"
+        ></i
+      ></a>
+      <span>&nbsp;|&nbsp;</span>
+      <a target="_blank" href="https://github.com/pkluitenberg"
+        >github&nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i
+      ></a>
+      <span>&nbsp;|&nbsp;</span>
+      <a target="_blank" href="mailto:paul.kluitenberg@gmail.com"
+        >email&nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i
+      ></a>
+      <span>&nbsp;|&nbsp;</span>
+      <span class="copyright">&copy; Paul Kluitenberg</span>
+    </div>
+    <script src="scripts/openContainer.js"></script>
+    <script src="scripts/openOverlay.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/mouseTail.js"></script>
+  </body>
+</html>
