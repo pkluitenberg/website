@@ -146,11 +146,15 @@ h1:hover {
 .preview-img .landscape {
   height: 350px;
   width: 375px;
+  background: #f1f1fa;
+  display: block;
 }
 
 .preview-img .portrait {
   width: 375px;
   height: 350px;
+  background: #f1f1fa;
+  display: block;
 }
 
 .full-image-desc {
