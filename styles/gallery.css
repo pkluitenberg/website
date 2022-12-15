@@ -145,6 +145,7 @@ h1:hover {
 
 .preview-img .landscape {
   height: 350px;
+  width: 375px;
 }
 
 .preview-img .portrait {
