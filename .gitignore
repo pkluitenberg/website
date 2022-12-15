@@ -3,3 +3,6 @@
 
 # MacOS files
 .DS_Store
+
+# full images
+images/gallery/*.jpg
