@@ -30,7 +30,8 @@ a {
   color: var(--primary-color);
 }
 
-h1:hover {
+h1:hover,
+a:hover {
   color: var(--secondary-color);
   cursor: pointer;
 }
@@ -141,6 +142,7 @@ h1:hover {
 .full-image {
   max-width: 80%;
   max-height: 80%;
+  background: var(--background-color);
 }
 
 .landscape {
