@@ -24,17 +24,6 @@ h1 {
   display: inline-block;
 }
 
-h2 {
-  font-weight: 100;
-  font-size: 8rem;
-  display: inline-block;
-  margin: 1rem;
-}
-
-ul {
-  list-style-type: none;
-}
-
 a {
   text-decoration: none;
   color: var(--primary-color);
@@ -62,12 +51,21 @@ h2:hover {
   font-weight: 100;
   font-size: 1rem;
 }
-.row {
-  display: flex;
+
+.mouse-tail {
+  position: fixed;
+  display: none;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 8rem;
+  display: inline-block;
+  margin: 1rem;
 }
 
 @supports (-webkit-text-stroke: 1px var(--primary-color)) {
-  .projects {
+  .projects h2 {
     font-weight: 400 !important;
     -webkit-text-stroke: 1px var(--primary-color);
     -webkit-text-fill-color: var(--background-color);
@@ -75,47 +73,27 @@ h2:hover {
 }
 
 @supports (-webkit-text-stroke: 1px var(--secondary-color)) {
-  .projects:hover {
+  .projects:hover h2 {
     -webkit-text-fill-color: var(--secondary-color);
     -webkit-text-stroke: 1px var(--secondary-color);
     cursor: pointer;
   }
 }
 
-.hide {
-  display: none !important;
-}
-
-.show {
-  flex: 1;
-}
-
-.content-resume,
-.content-aboutme,
-.content-projects,
-.content-photographs {
+.row {
   display: flex;
-  align-items: center;
-  font-weight: 100;
-  font-size: 1.5rem;
-  color: var(--secondary-color);
 }
 
-.content-projects a {
-  color: var(--secondary-color);
-  text-decoration: none;
+.spacer {
+  flex-grow: 0;
+  position: relative;
+  background-color: var(--secondary-color);
+  transition: all .5s ease-out;
 }
 
-.content-item {
-  margin: 1rem;
-}
-
-.alternate-hover:hover {
-  color: var(--primary-color);
-  cursor: pointer;
-}
-
-.mouse-tail {
-  position: fixed;
-  display: none;
+.aboutme:hover + .spacer,
+.career:hover + .spacer,
+.projects:hover + .spacer, 
+.gallery:hover + .spacer {
+  flex-grow: 1;
 }
