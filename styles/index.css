@@ -12,16 +12,7 @@
 body {
   font-family: "Epilogue";
   background-color: var(--background-color);
-}
-
-header {
-  margin: 1rem 1rem 1rem;
-}
-
-h1 {
-  font-weight: 800;
-  font-size: 8rem;
-  display: inline-block;
+  width: 100vw;
 }
 
 a {
@@ -29,39 +20,35 @@ a {
   color: var(--primary-color);
 }
 
-a:hover,
-h1:hover,
-h2:hover {
-  color: var(--secondary-color);
-  cursor: pointer;
-}
-
-.linksnav {
-  height: 2rem;
-  margin: 1rem;
-}
-
-.linksnav a,
-.linksnav span {
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-
-.linksnav .copyright {
-  font-weight: 100;
-  font-size: 1rem;
-}
-
 .mouse-tail {
-  position: fixed;
   display: none;
+}
+
+header {
+  margin: 0rem 1rem;
+  height: calc(95vh/5);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3.5rem;
+  display: inline-block;
 }
 
 h2 {
   font-weight: 100;
-  font-size: 8rem;
+  font-size: 3rem;
   display: inline-block;
   margin: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  height: calc(95vh/5);
 }
 
 @supports (-webkit-text-stroke: 1px var(--primary-color)) {
@@ -72,28 +59,166 @@ h2 {
   }
 }
 
-@supports (-webkit-text-stroke: 1px var(--secondary-color)) {
-  .projects:hover h2 {
-    -webkit-text-fill-color: var(--secondary-color);
-    -webkit-text-stroke: 1px var(--secondary-color);
-    cursor: pointer;
+.chevrons {
+  display: none;
+}
+
+.linksnav {
+  height: auto;
+  margin: .25rem;
+}
+
+.linksnav a,
+.linksnav span {
+  font-weight: 400;
+  font-size: .75rem;
+}
+
+.linksnav .copyright {
+  font-weight: 100;
+  font-size: .5rem;
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 4rem;
   }
 }
 
-.row {
-  display: flex;
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  header {
+    margin: 0.5rem;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 7rem;
+  }
 }
 
-.spacer {
-  flex-grow: 0;
-  position: relative;
-  background-color: var(--secondary-color);
-  transition: all .5s ease-out;
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+  h1 {
+    font-size: 8rem;
+  }
 }
 
-.aboutme:hover + .spacer,
-.career:hover + .spacer,
-.projects:hover + .spacer, 
-.gallery:hover + .spacer {
-  flex-grow: 1;
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+
+  header {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 8.5rem;
+    display: inline-block;
+  }
+
+  h2 {
+    font-weight: 100;
+    font-size: 8rem;
+    display: inline-block;
+    margin: 1rem;
+  }
+
+  a:hover,
+  h1:hover,
+  h2:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
+
+  .mouse-tail {
+    position: fixed;
+    display: none;
+  }
+
+  .chevrons {
+    display: inline;
+  }
+
+  @supports (-webkit-text-stroke: 1px var(--secondary-color)) {
+    .projects:hover h2 {
+      -webkit-text-fill-color: var(--secondary-color);
+      -webkit-text-stroke: 1px var(--secondary-color);
+      cursor: pointer;
+    }
+  }
+
+  .row {
+    display: flex;
+    align-items: unset;
+  }
+
+  .aboutme,
+  .career,
+  .projects,
+  .gallery {
+    align-self: center;
+  }
+
+  .spacer {
+    flex-grow: 0;
+    position: relative;
+    background-color: var(--secondary-color);
+    transition: all .5s ease-out;
+  }
+
+  .aboutme:hover+.spacer,
+  .career:hover+.spacer,
+  .projects:hover+.spacer,
+  .gallery:hover+.spacer {
+    flex-grow: 1;
+  }
+
+  .linksnav {
+    margin: 1rem;
+  }
+
+  .linksnav a,
+  .linksnav span {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  .linksnav .copyright {
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+  h1 {
+    font-size: 12rem;
+  }
+
+  h2 {
+    font-size: 11rem;
+  }
+
+  .linksnav a,
+  .linksnav span {
+    font-weight: 400;
+    font-size: 3rem;
+  }
+
+  .linksnav .copyright {
+    font-weight: 100;
+    font-size: 2.5rem;
+  }
 }
