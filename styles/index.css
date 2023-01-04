@@ -24,6 +24,8 @@ h1 {
 h1:hover {
   cursor: pointer;
   color: #F5634A;
+  text-shadow: 4px 4px #000000;
+  transition: all .2s ease-in-out;
 }
 
 h2 {
@@ -98,10 +100,11 @@ header .title {
   margin: 1rem;
   border: 1px solid #000000;
   border-radius: 4px;
-  transition: box-shadow .3s;
+  transition: all .2s ease-in-out;
 }
 
 .card:hover {
+  cursor: pointer;
   box-shadow: 4px 4px 0px #000000;
 }
 
@@ -197,8 +200,8 @@ a i:hover {
 }
 
 .dropdown-content a:hover {
-  border: 1px solid #000000;
-  border-radius: 4px;
+  color: #F5634A;
+  text-shadow: 1px 1px #000000;
 }
 
 .footer {

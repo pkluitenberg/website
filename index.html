@@ -29,62 +29,71 @@
             </div>
             <div class="navbar-whitespace"></div>
             <div class="navbar-links">
-                <a><i class="fa-brands fa-instagram"></i></a>
-                <a><i class="fa-regular fa-envelope"></i></a>
-                <a><i class="fa-brands fa-linkedin-in"></i></a>
-                <a><i class="fa-brands fa-github"></i></a>
+                <a><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a><i class="fa-regular fa-envelope fa-lg"></i></a>
+                <a><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                <a><i class="fa-brands fa-github fa-lg"></i></a>
             </div>
         </div>
         <div class="title">
             <h1 class="header-text">paul <br class="title-break">kluitenberg</h1>
             <div class="mouse-tail">
-                <img src="images/mouse-tail-image.jpg"/>
+                <img src="images/mouse-tail-image.jpg" />
             </div>
         </div>
     </header>
     <div class="card-container">
-        <a>
-            <div class="card about-me">
-                <h2>about me</h2>
-                <div class="card-footer">
-                    <div class="footer-text">
-                        <h3>about me</h3>
-                    </div>
+        <div class="card about-me">
+            <h2 class="card-header">about me</h2>
+            <div class="card-footer">
+                <div class="footer-text">
+                    <h3>about me</h3>
                 </div>
             </div>
-        </a>
-        <a>
-            <div class="card career">
-                <h2>career</h2>
-                <div class="card-footer">
-                    <div class="footer-text">
-                        <h3>career</h3>
-                    </div>
+        </div>
+        <div class="card career">
+            <h2>career</h2>
+            <div class="card-footer">
+                <div class="footer-text">
+                    <h3>career</h3>
                 </div>
             </div>
-        </a>
-        <a>
-            <div class="card projects">
-                <h2>projects</h2>
-                <div class="card-footer">
-                    <div class="footer-text">
-                        <h3>projects</h3>
-                    </div>
+        </div>
+        <div class="card projects">
+            <h2>projects</h2>
+            <div class="card-footer">
+                <div class="footer-text">
+                    <h3>projects</h3>
                 </div>
             </div>
-        </a>
-        <a>
-            <div class="card photography">
-                <h2>photography</h2>
-                <div class="card-footer">
-                    <div class="footer-text">
-                        <h3>photography</h3>
-                    </div>
+        </div>
+        <div class="card photography">
+            <h2>photography</h2>
+            <div class="card-footer">
+                <div class="footer-text">
+                    <h3>photography</h3>
                 </div>
             </div>
-        </a>
+        </div>
     </div>
     <div class="footer">&copy; paul kluitenberg</div>
+    <script>
+        var coll = document.getElementsByClassName("card");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                var thing = document.getElementsByClassName("card projects")
+                if (this.style.height == 600 + "px") {
+                    this.style.height = 300 + "px";
+                }
+                else {
+                    this.style.height = 600 + "px";
+                    this.style.zIndex="100";
+                }
+            });
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/mouseTail.js"></script>
 </body>
