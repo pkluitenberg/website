@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>home</title>
-    <meta name="viewport" conten="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/public/favicon.svg">
     <link rel='stylesheet' href='styles/index.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Epilogue:100,400,700,800'>
@@ -77,23 +77,6 @@
         </div>
     </div>
     <div class="footer">&copy; paul kluitenberg</div>
-    <script>
-        var coll = document.getElementsByClassName("card");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                var thing = document.getElementsByClassName("card projects")
-                if (this.style.height == 600 + "px") {
-                    this.style.height = 300 + "px";
-                }
-                else {
-                    this.style.height = 600 + "px";
-                    this.style.zIndex="100";
-                }
-            });
-        }
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/mouseTail.js"></script>
 </body>

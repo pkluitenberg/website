@@ -18,7 +18,7 @@ h1 {
   font-family: 'Epilogue';
   font-style: normal;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h1:hover {
@@ -195,7 +195,7 @@ a i:hover {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
   display: block;
 }
 
@@ -208,6 +208,14 @@ a i:hover {
   float: right;
   margin: 0 1rem .5rem 0;
   font-family: 'Epilogue';
+}
+
+@media only screen and (min-width: 400px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
 }
 
 @media only screen and (min-width: 900px) {
