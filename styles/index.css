@@ -31,7 +31,7 @@ h1:hover {
 h2 {
   font-family: 'PT Mono';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 3rem;
   margin: .5rem;
 }
@@ -56,7 +56,7 @@ header {
 header .title {
   margin-left: 1rem;
   width: 100%;
-  height: 80%;
+  height: 75%;
   display: flex;
   align-items: center;
 }
@@ -77,9 +77,9 @@ header .title {
   width: 100%;
   display: grid;
   gap: 0;
-  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-columns: 1fr 1.25fr 1fr;
   grid-template-rows: 1fr;
-  height: 20%;
+  height: 25%;
   border-bottom: 1px solid #000000;
 }
 
@@ -208,6 +208,7 @@ a i:hover {
   float: right;
   margin: 0 1rem .5rem 0;
   font-family: 'Epilogue';
+  font-weight: 200;
 }
 
 @media only screen and (min-width: 400px) {
