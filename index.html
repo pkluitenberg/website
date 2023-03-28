@@ -2,74 +2,79 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>home</title>
-    <meta name="viewport" conten="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/public/favicon.svg">
-    <link rel='stylesheet' href='styles/index.css'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Epilogue:100,400,800'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'
-        integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=='
-        crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <meta name="viewport" conten="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/favicon.svg" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Epilogue:100,400,800" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <header>
-        <h1 class="header-text">
-            <a target='_blank' href='https://www.google.com/search?q=paul+kluitenberg'>
-                paul kluitenberg
-            </a>
-        </h1>
+<body id="body">
+    <header class="parallax">
+        <div class="top">
+            <h1 class="name">paul kluitenberg</h1>
+        </div>
+        <div class="text header">
+            <p>
+                hi! welcome to my personal site :)
+            </p>
+        </div>
     </header>
-    <div class="mouse-tail">
-        <img src="images/mouse-tail-image.jpg">
-    </div>
-    <hr>
-    <div class='row'>
-        <a class="aboutme" href="aboutme.html">
-            <h2 onclick=''>about me</h2><h2 class="chevrons">>>></h2>
-        </a>
-        <span class="spacer"></span>
-    </div>
-    <hr>
-    <div class='row'>
-        <a class="career" href="career.html">
-            <h2 onclick=''>career</h2><h2 class="chevrons">>>></h2>
-        </a>
-        <span class="spacer"></span>
-    </div>
-    <hr>
-    <div class='row'>
-        <a class="projects" href="projects.html">
-            <h2 onclick=''>projects</h2><h2 class="chevrons">>>></h2>
-        </a>
-        <span class="spacer"></span>
-    </div>
-    <hr>
-    <div class='row'>
-        <a class="gallery" href="gallery.html">
-            <h2>photography</h2><h2 class="chevrons">>>></h2>
-        </a>
-        <span class="spacer"></span>
-    </div>
-    <hr>
-    <div class='linksnav'>
-        <a target='_blank' href='https://linkedin.com/in/paulkluitenberg/'>linkedin&nbsp;<i
-                class='fa-solid fa-arrow-up-right-from-square fa-sm'></i></a>
-        <span>&nbsp;|&nbsp;</span>
-        <a target='_blank' href='https://instagram.com/d_townpaul'>instagram&nbsp;<i
-                class='fa-solid fa-arrow-up-right-from-square fa-sm'></i></a>
-        <span>&nbsp;|&nbsp;</span>
-        <a target='_blank' href='https://github.com/pkluitenberg'>github&nbsp;<i
-                class='fa-solid fa-arrow-up-right-from-square fa-sm'></i></a>
-        <span>&nbsp;|&nbsp;</span>
-        <a target='_blank' href='mailto:paul.kluitenberg@gmail.com'>email&nbsp;<i
-                class='fa-solid fa-arrow-up-right-from-square fa-sm'></i></a>
-        <span>&nbsp;|&nbsp;</span>
-        <span class="copyright">&copy; Paul Kluitenberg</span>
-    </div>
+    <p class="down-arrow">&#x25BE;</p>
+    <section class="parallax negative">
+        <h2>about me</h2>
+        <div class="text aboutme">
+            <p>
+                my name is paul and i'm a 1995 boi currently living in amsterdam.
+                i mostly like to run long distances (slowly), cook, bring people together (still learning how to do this
+                one), and angst about the future.
+                if you're here, my question to you is "why?". you could be doing so many other things.
+                feel free to slide in my dms but only if you have accompany it with a song recommendation.
+            </p>
+        </div>
+    </section>
+    <section class="parallax">
+        <h2>career</h2>
+        <div class="text career">
+            <p>
+                2017 - 2020 | CNA Financial&nbsp;| Data Analyst, Data Engineer <br><br>
+                2020 - 2022 | SPINS LLC&nbsp; &nbsp; &nbsp;| Data Engineer, Full Stack Dev <br><br>
+                2022 - 2023 | Traveling <br><br>
+                2023 - &nbsp; &nbsp;&nbsp;&nbsp;| Adyen&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Implementation Manager
+            </p>
+        </div>
+    </section>
+    <section class="parallax negative">
+        <h2 class="projects">projects</h2>
+        <div class="text projects">
+            <p>
+                <a href="https://github.com/pkluitenberg/website">this website</a> <br>
+                <a href="https://github.com/pkluitenberg/pk-runs">my running dashboard</a> <br>
+                <a href="https://github.com/pkluitenberg/pk-runs-api">my running data api</a> <br>
+                <a href="https://github.com/pkluitenberg/pace-converter">pace converter</a>
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div class="copyright">&copy; Paul Kluitenberg</div>
+        <div class="links">
+            <i class="fa-brands fa-linkedin fa-lg"></i>
+            <i class="fa-brands fa-instagram fa-lg"></i>
+            <i class="fa-brands fa-github fa-lg"></i>
+            <i class="fa-regular fa-envelope fa-lg"></i>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/mouseTail.js"></script>
+    <div class="mouse-tail">
+        <img src="images/mouse-tail-image.jpg" />
+    </div>
+
 </body>
+
 
 </html>
